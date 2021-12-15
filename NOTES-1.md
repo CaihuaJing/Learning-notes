@@ -56,5 +56,57 @@ HTML排错
   ![常用标签](常用英语标签.jpg)
 
 ### 学习工具
+
 免费书籍  
-《网道HTML教程》[免费学习教程](https://wangdoc.com/html/index.html)
+* 《网道HTML教程》[免费学习教程](https://wangdoc.com/html/index.html)
+
+VSCode插件推荐
+* Prettier 更好的格式化工具
+  
+代码BUG三要素
+* 代码链接
+* 期望效果
+* 实际效果
+
+如何获取代码链接  
+* JS Bin(js.jirengu.com)
+* 代码沙河(codesandbox.io)
+
+### HTML起手式
+Emmet 感叹号
+起手式详解
+![起手式详解](起手式详解.jpg)
+
+### 章节标签&全局属性
+1. 章节标签
+* 标题 h1~h6
+* 章节 section
+* 文章 article
+* 段落 p
+* 头部 header
+* 脚部 footer
+* 主要内容 main
+* 旁支内容 aside
+* 划分 div
+* 版权所有 &copy  
+例：![章节标签例子](章节标签例子.png)
+
+1. 全局属性
+* class 赋予名字，添加样式
+* contenteditable 界面可编辑
+* hidden 隐藏
+* id 赋予名字，添加样式（限制太多，不建议使用）
+* style 样式
+* tabindex 设置Tab键控制网页  
+  tabindex=正数 表示顺序
+  tabindex=0 表示最后一个
+  tabindex=-1 表示别访问我
+* title 显示完整内容  
+  超出1行字体隐藏并省略
+  ```white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+
+例：![全局属性例子](全局属性例子.jpg)
+
+### 默认样式&CSS reset
