@@ -91,7 +91,7 @@ Emmet 感叹号
 * 版权所有 &copy  
 例：![章节标签例子](章节标签例子.png)
 
-1. 全局属性
+2. 全局属性
 * class 赋予名字，添加样式
 * contenteditable 界面可编辑
 * hidden 隐藏
@@ -102,7 +102,7 @@ Emmet 感叹号
   tabindex=0 表示最后一个
   tabindex=-1 表示别访问我
 * title 显示完整内容  
-  超出1行字体隐藏并省略
+  超出1行字体隐藏并省略:
   ```white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; 
@@ -110,3 +110,107 @@ Emmet 感叹号
 例：![全局属性例子](全局属性例子.jpg)
 
 ### 默认样式&CSS reset
+默认样式指HTML自带样式  
+可使用Chrome开发者工具Elements->Styles->user agent stylesheet
+CSS reset 指将默认样式清除
+
+### 内容标签
+* ol+li 有顺序的列表和内容
+* ul+li 没有顺序的列表
+* dl+dt+dd 描述列表
+* pre 保留空格、回车、Tab
+* hr 分割线
+* br 换行
+* a 超链接
+* em 表示强调
+* strong 表示重点
+* code 字体等宽
+* quote 行引用
+* blockquote 块引用
+
+## HTML重难点
+
+英语小课堂
+![英语小课堂](重难点英文标签.jpg)  
+
+### a 标签  
+属性  
+href  是一个超级链接  
+target 在哪一个窗口打开链接(targtt="_blank" 在新标签打开)  
+download （不是所有浏览器都支持）  
+rel=noopener 防止一个bug  
+作用：  
+* 跳转外部页面
+* 跳转内部锚点  
+* 跳转到邮箱或者地址
+
+a的href的取值
+* 网址  
+https://baidu.com  
+http://baidu.com  
+//google.com
+* 路径  
+/a/b/c以及a/b/c  
+index.html以及./index.html  
+* ID  
+href=#XXX 跳转一个指定标签
+* 伪协议  
+javascript:代码；  
+mailto:邮箱  
+tel:手机号   
+a的target的取值
+* 内置名字
+_blank 空白页面打开  
+_top 在最顶层级打开  
+_parent 在副层级打开  
+_self 默认方式代开  
+* 程序员命名  
+window的name  
+iframe的name  
+
+### iframe标签
+内嵌窗口，目前仅有某些老系统使用  
+
+### table标签
+表格  
+* 相关标签  
+table 
+thead
+tbody
+tfoot
+tr //table row 表格中的一行  
+td  数据  
+th 表头  
+* 相关样式  
+table-layout 表格布局单元格，行和列  
+border-collapse 合并  
+border-spacing 单元格之间的距离
+
+### img标签
+作用：发出get请求，展示一张图片  
+属性：alt/height/width/src  
+事件：onload/onerror  
+响应式：max-width:100%  
+
+### form标签(表单)
+作用：发get或post请求，然后刷新页面  
+属性：action/autocomplete/method/target  
+事件：onsubmit  
+
+### input标签
+作用：让用户输入内容  
+属性：  
+类型type:button/checkbox/email/file/hidden/number/password/radio/search/submit/tel/text  
+其他name/autofocus/checked/disabled/maslength/pattern/value/placeholder  
+事件：onchange/onfocus/onblur  
+验证器：HTML5新增功能
+
+### 其他输入标签
+标签：select+option/textarea/label
+注意事项：一般不监听input的click事件  
+from里面的input要有name  
+form里要发放一个type=submit才能出发submit事件
+
+### 其他标签
+标签：video/audio/canvas/svg  
+注意事项:标签兼容性一定要看文档
